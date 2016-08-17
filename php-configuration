@@ -1,0 +1,46 @@
+# This setup is based on the tutorial below Basic Php System: View/edit/delete/add Records
+
+
+
+# First Follow the steps @ the link below How To Install Linux, Apache, MySQL, PHP (LAMP) stack On CentOS 7
+
+# https://www.digitalocean.com/community/tutorials/how-to-install-linux-apache-mysql-php-lamp-stack-on-centos-7
+
+
+
+# Now lets do the tutorial
+# http://www.killersites.com/community/index.php?/topic/1969-basic-php-system-vieweditdeleteadd-records/
+
+
+# You will need to create each one of these files, the contents of the files can be found @ the
+
+# tutorial link
+# SQL-file.txt, connect-db.php, view.php, view-paginated.php, new.php, edit.php, delete.php
+
+
+DATABASE:
+-- You'll need to create a database (I named mine 'records' but it can be changed) using PHPMyAdmin
+-- Save the included sql file on your desktop as a .txt file
+-- Once you've created the database, make sure the database is selected, then click the "import" tab
+-- Select the .txt file on your desktop, and import it into your database. PHPMyAdmin will create all of the necessary tables/import some test data for you to play with
+
+
+
+    ************* ******** **** ******** ******** *** Issues Experienced ********** ******** ************** ** ********
+    
+    # Problem - Local Web url would not load https://10.33.0.235/view.php
+    
+    # Solution - Allow http(s) through firewall
+    $ yum install firewalld
+    
+    $ sudo firewall-cmd --permanent --zone=public --add-service=http 
+    $ sudo firewall-cmd --permanent --zone=public --add-service=https
+    $ sudo firewall-cmd --reload
+    
+    
+    
+  
+
+
+
+
