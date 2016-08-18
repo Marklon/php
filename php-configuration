@@ -12,9 +12,7 @@
 # http://www.killersites.com/community/index.php?/topic/1969-basic-php-system-vieweditdeleteadd-records/
 
 
-# You will need to create each one of these files, the contents of the files can be found @ the
-
-# tutorial link
+# You will need to create each one of these files, the contents of the files can be found @ the tutorial link
 # SQL-file.txt, connect-db.php, view.php, view-paginated.php, new.php, edit.php, delete.php
 
 
